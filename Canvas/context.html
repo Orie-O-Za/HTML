@@ -3,7 +3,7 @@
     <head>
         <title>Context</title>
         <style type="text/css">
-        #canvas_1 {border: dotted 3px black;} 
+        #canvas_1 {border: dotted 3px} 
         </style>
 
         <script>
@@ -14,14 +14,14 @@
                 {
                     // Todo: Change the width and height of the canvas
                     theCanvas.width=180;
-                    theCanvas.height=180
+                    theCanvas.height=180;
 
-                    // Todo: Fill the canvas with a light bluee barground
+                    // Todo: Fill the canvas with a light blue barground
                     var ctx = theCanvas.getContext("2d");
                     if (ctx)
                     {
-                        ctx.fillStyle = "lightBlue";
-                        ctx.strokeStyle = blue;
+                        ctx.fillStyle = "lightblue";
+                        ctx.strokeStyle = "blue";
                         ctx.lineWidth = 5;
 
                         ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
