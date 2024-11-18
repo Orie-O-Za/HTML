@@ -28,3 +28,9 @@ body{
 .logo a img{
     width: 100px;
 }
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
