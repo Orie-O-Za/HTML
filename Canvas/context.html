@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2D Context</title>
+        <style type="text/css">
+        #canvas_1 {border: dotted 2px black} 
+        </style>
+
+        <script>
+            window.addEventListener("load", function()
+            {
+                var theCanvas = document.getElementById('canvas_1');
+                if (theCanvas && theCanvas.getContext)
+                {
+                    // Todo: Change the width and height of the canvas
+                    theCanvas.width=200;
+                    theCanvas.height=280;
+
+                    // Todo: Fill the canvas with a light blue barground
+                    var ctx = theCanvas.getContext("2d");
+                    if (ctx)
+                    {
+                        ctx.fillStyle = "lightBlue";
+                        ctx.strokeStyle = "blue";
+                        ctx.lineWidth = 5;
+
+                        ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
+                        ctx.strokeStyle(0,0,ctx.canvas.width,ctx.canvas.height);
+                    }
+                }
+            });
+        </script>
+    </head>
+    
+    <body>
+        <h1>Drawing into Canvas 2D Context</h1>
+        <div>
+            <p>After retrivieng the canvas context, you can use the drawing methods to create content<br>
+               This simple example resizes the canvas using width and height properties and then fill the backgrund with a light blue color</p>
+            <canvas id="canvas_1" width="400" height="400">I hope your browsy supports canvas</canvas>
+        </div>
+    </body>
+</html>
