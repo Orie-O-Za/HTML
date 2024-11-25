@@ -1,0 +1,2 @@
+What going on with git?
+Because Git is not recording my commits
