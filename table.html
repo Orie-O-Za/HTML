@@ -3,8 +3,10 @@
     <head>
         <title>Table</title>
         <style>
-            table {border: 1px solid black; border-collapse: collapse;}
+            body {text-align: center; background-color:aqua}
+            table {border: 1px solid black; border-collapse: collapse; padding: 10px;}
             td, th {border: 1px solid black; padding: 5px;}
+            #tdf {color: red; font-size: larger;}
         </style>
     </head>
 
@@ -17,8 +19,8 @@
             </thead>
 
             <tbody>
-                <tr><td>Pacific Ocean</td><td>4,280</td><td>10,911</td></tr>
-                <tr><td>Atlantic Ocean</td><td>3,646</td><td>8,486</td></tr>
+                <tr><td><b> Pacific Ocean<b></b></td><td id="tdf">4,280</td><td id="tdf">10,911</td></tr>
+                <tr><td><b>Atlantic Ocean</b></td><td id="tdf">3,646</td><td id="tdf">8,486</td></tr>
             </tbody>
         </table>
     </body>
