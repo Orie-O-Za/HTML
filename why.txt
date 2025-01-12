@@ -1,3 +1,0 @@
-What going on with git?
-Because Git is not recording my commits
-This text file has been noted by Git Hub
